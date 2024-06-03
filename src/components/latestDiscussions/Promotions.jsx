@@ -27,9 +27,8 @@ export const Promotions = () => {
                 </button>
 
             </div>
-            <div className="relative bg-gradient-to-t from-pink-900 via-purple-900 to to-black rounded-lg border w-full h-full flex flex-col justify-center items-center">
-                    <div className="top-32 bg-white rotate-45 w-28 h-12 absolute rounded-full"></div>
-                    <div className="top-32 left-28 bg-pink-600 -rotate-45 w-32 h-16 absolute rounded-full"></div>
+            <div className="p-8 bg-gradient-to-t from-pink-900 via-purple-900 to to-black rounded-lg border w-full h-full flex flex-col justify-center items-center">
+                    
                 <div className="relative">
                     <div className="m-4 top-0 rounded-full h-32 w-24 overflow-hidden">
                         <img className="w-100 h-100" src="./../../src/assets/emoji/promoImg2.png" alt="Promotion image" />
