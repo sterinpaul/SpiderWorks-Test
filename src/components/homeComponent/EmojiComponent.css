@@ -1,0 +1,121 @@
+
+
+@keyframes moveEmoji1 {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translate(15px,15px);
+    } 
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.moveAnimation1{
+    animation: moveEmoji1 6s infinite ease-in-out;
+}
+
+.moveAnimation3{
+    animation: moveEmoji1 6s infinite ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes moveEmoji2 {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translate(15px,-15px);
+    } 
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.moveAnimation2{
+    animation: moveEmoji2 6s infinite ease-in-out;
+    animation-delay: 2s;
+}
+
+.moveAnimation4{
+    animation: moveEmoji2 6s infinite ease-in-out;
+}
+
+
+/* Typing Animations */
+
+.typing-container1 {
+    width:4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typingSmall 5s steps(6) infinite;
+}
+.typing-container2 {
+    width:7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typingMedium 5s steps(15) infinite;
+    animation-delay: 1s;
+}
+.typing-container3 {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(14) infinite;
+}
+.typing-container4 {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(15) infinite;
+    animation-delay: 1s;
+}
+
+
+/* Typing animation keyframes */
+@keyframes typing {
+    0% {
+        width: 0;
+        display: none;
+    }
+    50% {
+        width: 8rem;
+    }
+    99% {
+        width: 8rem;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes typingMedium {
+    0% {
+        width: 0;
+        display: none;
+    }
+    50% {
+        width: 7rem;
+    }
+    99% {
+        width: 7rem;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes typingSmall {
+    0% {
+        width: 0;
+        display: none;
+    }
+    50% {
+        width: 4rem;
+    }
+    99% {
+        width: 4rem;
+    }
+    100% {
+        width: 0;
+    }
+}
