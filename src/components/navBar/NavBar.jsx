@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import {
     Navbar,
@@ -14,7 +13,7 @@ import {
 import { FiSearch } from "react-icons/fi";
 
 
-function NavList({openNav}) {
+function NavList() {
 
     return (
         <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
@@ -68,7 +67,7 @@ export function NavBar() {
                     
 
                 <div className="hidden lg:block">
-                    <NavList openNav={openNav} />
+                    <NavList/>
                 </div>
                 <div className="hidden gap-2 lg:flex relative group">
                     <div style={{border:"7px solid black"}} className="absolute top-0 -left-9 w-10 h-10 rounded-full cursor-pointer flex justify-center items-center">
@@ -92,7 +91,7 @@ export function NavBar() {
                 </IconButton>
             </div>
             <Collapse open={openNav}>
-                <NavList openNav={openNav} />
+                <NavList/>
                 <div className="flex items-center justify-center">
                         <div style={{ border: "4px solid black" }} className="w-8 h-8 rounded-full cursor-pointer flex justify-center items-center -mr-1">
                             <FiSearch className="w-3 h-3 text-black" />
