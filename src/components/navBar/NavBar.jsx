@@ -23,7 +23,7 @@ function NavList({openNav}) {
                 Learn
             </button>
 
-            {!openNav && <div className="my-auto w-1.5 h-1.5 bg-black rounded-full"></div>}
+            <div className="hidden lg:block my-auto w-1.5 h-1.5 bg-black rounded-full"></div>
 
 
             <button className=" hover:text-blue-500 focus:text-blue-500 focus:drop-shadow-lg shadow-black p-2 my-auto">
@@ -31,14 +31,14 @@ function NavList({openNav}) {
             </button>
 
 
-            {!openNav && <div className="my-auto w-1.5 h-1.5 bg-black rounded-full"></div>}
+            <div className="hidden lg:block my-auto w-1.5 h-1.5 bg-black rounded-full"></div>
 
             <button className=" hover:text-blue-500 focus:text-blue-500 focus:drop-shadow-lg shadow-black p-2 my-auto">
                 Universities
             </button>
 
 
-            {!openNav && <div className="my-auto w-1.5 h-1.5 bg-black rounded-full"></div>}
+            <div className="hidden lg:block my-auto w-1.5 h-1.5 bg-black rounded-full"></div>
 
             <button className=" hover:text-blue-500 focus:text-blue-500 focus:drop-shadow-lg shadow-black p-2">
                 Corporate
