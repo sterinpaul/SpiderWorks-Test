@@ -11,10 +11,10 @@ export const Promotions = () => {
                 <div className="flex justify-center items-center relative my-4 w-40 h-40">
                     <div style={{filter:"blur(20px)"}} className="animate-spin absolute h-40 w-40 bg-gradient-to-tr from-red-600 to to-deep-purple-600 rounded-full"></div>
                     <img className="absolute w-full h-full object-cover" src="/emoji/contributorImg.png" alt="contributor" />
-                    <div className="bg-red-900 text-white text-xs absolute top-16 -left-16 h-4 rounded-full px-1">
+                    <div className="bg-red-900 text-white text-xs absolute top-16 -left-12 sm:-left-16 h-4 rounded-full px-1">
                         <span className="w-4 h-4 text-white text-nowrap rounded-full"></span>100+RESPONSES
                     </div>
-                    <div className="bg-green-900 text-white font-thin text-xs text-nowrap absolute top-20 left-32 h-4 rounded-full px-1">
+                    <div className="bg-green-900 text-white font-thin text-xs text-nowrap absolute top-20 left-20 sm:left-28 h-4 rounded-full px-1">
                         <span className="w-4 h-4 text-white rounded-full"></span>4.2 POSTIVE RATING
                     </div>
                 </div>

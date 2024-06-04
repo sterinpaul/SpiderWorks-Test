@@ -14,7 +14,7 @@ export const TopicsComponent = ()=>{
     return(
         <div className="h-full w-full mt-12 py-20 bg-orange-50 flex flex-col items-center">
             <p className="text-gray-600">TOPICS</p>
-            <Typography variant="h1" className="font-normal font-serif">Most Searched <span className="italic">Ones</span></Typography>
+            <Typography variant="h1" className="font-normal font-serif text-center px-2">Most Searched <span className="italic">Ones</span></Typography>
             <div className="my-8 grid w-full md:px-24 lg:px-40 px-20 sm:grid-cols-2 lg:grid-cols-3 grid-flow-dense gap-6 font-serif">
                 {searchedArray.map((single,index)=>{
                     return(
@@ -22,9 +22,9 @@ export const TopicsComponent = ()=>{
                     )
                 })}
             </div>
-            <div className="mt-6 flex gap-4 justify-center items-center">
+            <div className="mt-6 flex flex-col sm:flex-nowrap sm:flex-row flex-wrap gap-4 justify-center items-center">
                 <p>Didn&apos;t find your topic ?</p>
-                <MdOutlineChatBubbleOutline className="w-4 h-4"/> 
+                <MdOutlineChatBubbleOutline className="w-4 h-4 hidden sm:block"/>
                 <p className="font-serif italic cursor-pointer">Start discussing</p>
             </div>
         </div>

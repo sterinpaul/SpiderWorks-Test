@@ -88,7 +88,10 @@ export const DiscussionList = () => {
     return (
         <div className="flex flex-col justify-center items-stretch w-100">
             <div className="flex items-center justify-between">
-                <p className="text-gray-500 text-sm">LATEST DISCUSSIONS AS OF <span className="w-4 h-2 mr-1 px-3 bg-red-800"></span> <span className="font-bold">MARCH 12 2024</span></p>
+                <p className="text-gray-500 text-sm break-words">LATEST DISCUSSIONS AS OF 
+                    <span className="w-4 h-2 mx-1 px-3 bg-red-800"></span> 
+                    <span className="font-bold">MARCH 12 2024</span>
+                </p>
                 <Button color="light-blue" className="bg-light-blue-200 text-gray-900 flex rounded-full items-center gap-1">
                     <MdLightbulbOutline className="w-4 h-4" />
                     <p className="text-nowrap">ALL TOPICS</p>
@@ -103,17 +106,17 @@ export const DiscussionList = () => {
             <div>
                 {discussHistory.map((single, index) => {
                     return (
-                        <div key={index} className="flex items-center justify-between gap-2 border-b border-gray-300 py-3">
-                            <div className="flex items-center gap-2">
+                        <div key={index} className="flex flex-col sm:flex-row items-center justify-between gap-2 border-b border-gray-300 py-3">
+                            <div className="flex items-center w-full md:w-100 gap-2">
                                 <Avatar src={single.img} />
-                                <div>
+                                <div className="text-left">
                                     <p className="text-md">
                                         {single.question}
                                     </p>
                                     <p className="text-sm text-gray-600">Posted by {single.name}</p>
                                 </div>
                             </div>
-                            <div className="flex md:flex-row md:justify-between gap-2 flex-col">
+                            <div className="flex self-start md:justify-between gap-2 sm:flex-col lg:flex-row">
                                 <button className="hover:shadow-lg hover:text-pink-900 w-36 shadow-black text-nowrap p-2 bg-purple-50 font-normal text-sm rounded-full flex gap-1 items-center justify-center flex-nowrap text-gray-800">
                                     <PiChatsLight className="w-5 h-5 text-pink-500"/>
                                     {single.responseCount} RESPONSES
