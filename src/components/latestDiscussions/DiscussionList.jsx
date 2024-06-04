@@ -86,10 +86,10 @@ const discussHistory = [
 
 export const DiscussionList = () => {
     return (
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center items-stretch w-100">
             <div className="flex items-center justify-between">
                 <p className="text-gray-500 text-sm">LATEST DISCUSSIONS AS OF <span className="w-4 h-2 mr-1 px-3 bg-red-800"></span> <span className="font-bold">MARCH 12 2024</span></p>
-                <Button color="light-blue" className=" text-gray-900 flex rounded-full items-center gap-1">
+                <Button color="light-blue" className="bg-light-blue-200 text-gray-900 flex rounded-full items-center gap-1">
                     <MdLightbulbOutline className="w-4 h-4" />
                     <p className="text-nowrap">ALL TOPICS</p>
                     <MdKeyboardArrowDown className="w-5 h-5" />
@@ -103,7 +103,7 @@ export const DiscussionList = () => {
             <div>
                 {discussHistory.map((single, index) => {
                     return (
-                        <div key={index} className="flex items-center justify-between gap-2 border-b border-gray-300 py-2">
+                        <div key={index} className="flex items-center justify-between gap-2 border-b border-gray-300 py-3">
                             <div className="flex items-center gap-2">
                                 <Avatar src={single.img} />
                                 <div>
@@ -124,7 +124,7 @@ export const DiscussionList = () => {
                     )
                 })}
             </div>
-            <button className="w-32 hover:text-pink-900 hover:shadow-lg bg-white border border-blue-gray-800 py-1 px-2 rounded-full capitalize m-8">Load More</button>
+            <button className="w-32 hover:text-pink-900 hover:shadow-lg bg-white border border-blue-gray-800 py-1 px-2 rounded-full capitalize mt-12">Load More</button>
         </div>
     )
 }

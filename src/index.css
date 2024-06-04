@@ -2,6 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.logo{
+  margin: auto;
+  width: 1.05rem;
+  height: 1.9rem;
+  position: relative;
+  border-top: .9rem solid black;
+  border-right: 9px solid black;
+  border-bottom: 14.5px solid transparent;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 5rem;
+}
+
+.logo::before{
+  position: absolute;
+  content: "";
+  top:-1.15rem;
+  right: 7px;
+  width: 1.05rem;
+  height: 1.9rem;
+  rotate: 180deg;
+  border-top: .8rem solid black;
+  border-right: 9px solid black;
+  border-bottom: 14.5px solid transparent;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 5rem;
+}
+
+
+/* bg-gradient-to-tl from-pink-800 via-purple-900 to to-black */
+.bgGradient{
+  background: radial-gradient(circle at 40% 80%, #ed1564 ,transparent),
+  linear-gradient( black ,transparent),
+  radial-gradient(circle at 70% 60%, rgb(72, 0, 255), black);
+}
+
+
 /* 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

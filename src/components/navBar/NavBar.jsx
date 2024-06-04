@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import {
     Navbar,
     Collapse,
-    Typography,
     Button,
     IconButton,
     List
@@ -62,20 +61,11 @@ export function NavBar() {
     return (
         <Navbar className="fixed top-0 md:relative z-50 max-w-none rounded-none bg-white">
             <div className="flex items-center justify-between">
-                <Typography
-                    as="a"
-                    href="#"
-                    variant="h3"
-                    className="mr-4 cursor-pointer py-1.5 lg:ml-2 "
-                >
-                    {/* Logo */}
-
-                    <div style={{borderRadius: "0% 100%/ 0% 60%" }} className="relative w-7 h-8 bg-black">
-                        <div style={{borderRadius: "0% 100% 0% 100% / 0% 0% 100% 100%" , left:"1px",width:"13px"}} className="absolute top-0 h-4 bg-white"></div>
-                        <div style={{borderRadius: "0% 100% 100% 0% / 0% 100% 0% 100%", right:"1px",width:"13px"}} className="absolute bottom-0 h-4 bg-white"></div>
-                    </div>
-
-                </Typography>
+                
+                <div className="pl-4 pt-1">
+                    <div className="logo"></div>
+                </div>
+                    
 
                 <div className="hidden lg:block">
                     <NavList openNav={openNav} />

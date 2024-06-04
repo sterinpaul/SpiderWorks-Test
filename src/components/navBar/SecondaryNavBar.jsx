@@ -6,7 +6,6 @@ import {
     MenuHandler,
     MenuList,
     MenuItem,
-    Typography,
     Button
 } from "@material-tailwind/react";
 import {
@@ -71,19 +70,11 @@ export function SecondaryNavBar() {
         <div className="md:flex justify-center items-center hidden bg-transparent">
             <Navbar className="fixed top-5 w-100 max-w-none px-6 py-2 backdrop-blur-sm backdrop-filter backdrop-brightness-95 border-gray-200 rounded-md z-50">
                 <div className="flex items-center justify-between gap-12">
-                    <Typography
-                        as="a"
-                        href="#"
-                        variant="h3"
-                        className="cursor-pointer"
-                    >
-                        {/* Logo */}
-                        <div style={{ borderRadius: "0% 100%/ 0% 60%" }} className="relative w-5 h-6 bg-black">
-                            <div style={{ borderRadius: "0% 100% 0% 100% / 0% 0% 100% 100%", left: "1px", width: "9px" }} className="absolute top-0 h-3 bg-white"></div>
-                            <div style={{ borderRadius: "0% 100% 100% 0% / 0% 100% 0% 100%", right: "1px", width: "9px" }} className="absolute bottom-0 h-3 bg-white"></div>
-                        </div>
 
-                    </Typography>
+                    <div className="pt-1 pl-4">
+                        <div className="logo"></div>
+                    </div>
+
                     <div className="flex gap-4">
                         
                         <NavList />
